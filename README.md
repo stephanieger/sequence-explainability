@@ -37,7 +37,8 @@ The scripts used for examining the low-loss paths between trained weights are lo
 
 ## Using Scripts for Other Datasets
 To use these scripts for other datasets, the following inputs must be created.
-X: Data of the shape (batch, timesteps, features), in the case of word data, an embedding like BERT should be used to get a vector representation for each word. 
-Y: Label for the data of the shape (batch, labels)
-F: One hot encoding of the event types of the data of the shape (batch, timesteps, number_of_events), in the case of words we used hypernyms from the NLTK wordnet embedding. 
-E: Event Type of the shape (batch,timesteps) where we have an ordered list of event types and the index corresponds to a given event type. 
+
+* X: Data of the shape (batch, timesteps, features), in the case of word data, an embedding like BERT should be used to get a vector representation for each word. 
+* Y: Label for the data of the shape (batch, labels)
+* F: One hot encoding of the event types of the data of the shape (batch, timesteps, number_of_events), in the case of words we used hypernyms from the NLTK wordnet embedding. 
+* E: Event Type of the shape (batch,timesteps) where we have an ordered list of event types and the index corresponds to a given event type. 
